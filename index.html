@@ -52,30 +52,103 @@
                 </section>
                 <section id="meetingContent">
                     <h2>Meeting Content</h2>
-                    <h3>Where were we last week?</h3>
-                    <ul>
-                        <li>Groups were <em>chosen</em></li>
-                        <li>Team leaders were <em>assigned</em></li>
-                        <li>Everyone has met for the <em>first</em> time</li>
-                    </ul>
-                    <h3>What to talk about this week?</h3>
-                    <ul>
-                        <li>What languages is everyone <strong>fluent in?</strong></li>
-                        <li>What is everyone's <strong>technical background?</strong></li>
-                        <li>What are everyone's <strong>preferences?</strong></li>
-                    </ul>
+                    <details>
+                        <summary>Where were we last week?</summary>
+                        <ul>
+                            <li>Groups were <em>chosen</em></li>
+                            <li>Team leaders were <em>assigned</em></li>
+                            <li>Everyone has met for the <em>first</em> time</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>What to talk about this week?</summary>
+                        <ul>
+                            <li>What languages is everyone <strong>fluent in?</strong></li>
+                            <li>What is everyone's <strong>technical background?</strong></li>
+                            <li>What are everyone's <strong>preferences?</strong></li>
+                        </ul>
+                    </details>
                     <h3>Questions | Comments | Concerns</h3>
                     <p>
-                        What is everyone's availability for the coming weeks? Does anyone want to volunteer for a role <strong>before we discuss anything?</strong> The project is going to be time consuming, does everyone <strong>know they can commit time to this?</strong>
+                        What is everyone's availability for the coming weeks? Does anyone want to volunteer for a role <span></span><strong>before we discuss anything?</strong> The project is going to be time consuming, does everyone <strong>know they can commit time to this?</strong>
                     </p>
                     <h3>Pictures that were Presented:</h3>
                     <img src="presentation.jpg">
                     <img src="workingtogether.jpg">
                     <h3>Video and Audio Recording of Meeting</h3>
-                    <video controls>
+                    <video controls width="250">
                         <source src="IMG_3146.mp4">
                     </video>
+                    <br>
                     <audio controls src="audio.mp3"></audio>
+                </section>
+                <hr>
+                <section>
+                    <form>
+                        <label>First Name:</label>
+                        <input type="text" required/>
+                        <br>
+                        <label>Last Name:</label>
+                        <input type="text" required/>
+                        <br>
+                        <label>Birthday:     </label>
+                        <input type="date">
+                        <br>
+                        <fieldset>
+                            <legend>What school do you attend?</legend>
+                            <input type="radio"/>
+                            <label>UCSD</label>
+                            <br>
+                            <input type="radio"/>
+                            <label>SDSU</label>
+                            <br>
+                            <input type="radio"/>
+                            <label>Community College</label>
+                            <br>
+                            <input type="radio"/>
+                            <label>other</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>What languages are you fluent in?</legend>
+                            <input type="checkbox"/>
+                            <label>english</label>
+                            <br>
+                            <input type="checkbox"/>
+                            <label>spanish</label>
+                            <br>
+                            <input type="checkbox"/>
+                            <label>arabic</label>
+                            <br>
+                            <input type="checkbox"/>
+                            <label>mandarin</label>
+                            <br>
+                            <input type="checkbox">
+                            <label>other</label>
+                        </fieldset>
+                        <label>How are you feeling today?</label>
+                        <br>
+                        <textarea>I am feeling..</textarea>
+                        <br>
+                        <label>What year do you graduate?</label>
+                        <input list="graduation-years" id="graduation-year" name="graduation-year"/>
+                        <datalist id="graduation-year">
+                            <option value="graduated"></option>
+                            <option value="2025"></option>
+                            <option value="2026"></option>
+                            <option value="2027"></option>
+                        </datalist>
+                        <br>
+                        <label>What is your major?</label>
+                        <select>
+                            <option>Computer Science</option>
+                            <option>Data Science</option>
+                            <option>Computer Engineering
+                            </option>
+                            <option>other</option>
+                        </select>
+                        <br>
+                        <button>submit</button>
+                    </form>
                 </section>
             </main>
         </div>
