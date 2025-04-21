@@ -1,0 +1,27 @@
+# Insert any bullets you have completed
+- #FFF or #FFFFFF
+- hsl(h, s, l) or hsla(h, s, l, a)
+- Background    Links to an external site./* apply background styles to your elements */
+background-color
+- Comment /* write down comments to make your css easier to read */
+- 3 unique relative units
+- 3 unique absolute units
+-Margin     /* spacing between html elements */
+- Long (margin-top, margin-bottom, margin-left, margin-right)
+- Short (margin: <top> <right> <bottom> <left>)
+- Auto margins: margin: auto
+- Padding     /* spacing within html elements */
+- Long (padding-top, padding-bottom, padding-left, padding-right)
+-  (padding: <top> <right> <bottom> <left>)
+- border-style
+- border-color
+- border-width
+- border-radius
+- color
+- text-decoration
+- text-align
+- class selector
+- ID selector
+- universal selector
+- psuedo selector
+- font
