@@ -19,8 +19,8 @@ insert short description....
 
 ## Problems and Follow Up Actions
 **insert problem**
-- []Follow up action
-- []follow up action
+- [ ]Follow up action
+- [ ]follow up action
 
 ## 🗓️Quick Reminder/Team Announcements
 1. agenda
