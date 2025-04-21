@@ -1,0 +1,110 @@
+/* Style the Meeting Minutes */
+
+/*set font for page*/
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*set style for header*/
+#meeting_title {
+    font-size: 2.5rem;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    word-wrap: break-word;
+}
+hr {
+    border: none;
+    height: 10px;
+    background: #ca0303;
+    border-radius: 5px;
+}
+.header_container {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+}
+
+header {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #meeting_title {
+        font-size: 1.5rem;
+    }
+
+    .header_container {
+        width: 95%;
+        padding: 1em;
+    }
+}
+
+/*General CSS*/
+* {
+    box-sizing: border-box;
+}
+
+ol {
+    list-style-type: none;
+}
+a {
+    color: #1C2541;
+}
+
+a:hover {
+    color: #546CB6;
+    text-decoration: none;
+}
+
+nav {
+    border-style: solid;
+    text-align: left;
+}
+
+
+/*set style for footer*/
+.footer_container {
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background-color:color-mix(in hsl shorter hue, blue 30%, green 15%);
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+footer {
+    position: sticky;
+    margin: 0% 0% 20px 20px;
+    padding: 30px 30px 5px 5px;
+    color: color(srgb 2 3 5 / 0.5);
+    background-size: cover;
+}
+@media screen and (max-width: 600px) {
+    .footer_container {
+        width: 95%;
+        padding: 1em;
+    }
+}

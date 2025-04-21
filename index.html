@@ -4,11 +4,23 @@
         <meta name="description" content="Meeting minutes for CSE 110">
         <title>Meeting Minutes</title>
         <link rel="icon" type="image/x-icon" href="/Lab-2/Lab2_Starter/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     </head>
+    <style>
+    body {
+        background-color: #3A506B;
+        background: hsl(180, 34%, 32%);
+        display: flex;
+        flex-direction: column;
+    }
+    </style>
     <body>
-        <div>
+        <div class="header_container">
             <header>
-                <h1>Meeting Minutes for Team 4</h1>
+                <h1 id="meeting_title">Meeting Minutes for Team 4</h1>
                 <nav>
                     <ol>
                       <li><a href="#attendenceList">Attendence</a></li>
@@ -21,7 +33,7 @@
                 <hr>
             </header>
         </div>
-        <div>
+        <div class="main_container">
             <main>
                 <section id="attendenceList">
                     <h2>Attendence List</h2>
@@ -152,7 +164,7 @@
                 </section>
             </main>
         </div>
-        <div>
+        <div class="footer_container">
             <footer>©Team4TheWin</footer>
         </div>
     </body>
