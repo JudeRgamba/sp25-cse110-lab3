@@ -147,7 +147,7 @@ h2 + h3 {
 h3 ~ ol {
     color: #A7DDDC;
     font-family: 'Special Gothic Expanded One', sans-serif;
-    font-weight: 1.5px;
+    font-weight: 2px;
 }
 #attendence_list {
     display: grid;
