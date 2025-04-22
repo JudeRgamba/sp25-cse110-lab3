@@ -35,25 +35,28 @@
         </div>
         <div class="main_container">
             <main>
-                <section id="attendenceList">
-                    <h2>Attendence List</h2>
-                    <h3>Present:</h3>
-                    <ol>
-                        <li>Arul Mathur</li>
-                        <li>Meruzhan Sargsyan</li>
-                        <li>Mohamed Hambdi</li>
-                        <li>Ali Alsadah</li>
-                        <li>Kyle Long</li>
-                        <li>Arman Nurbalin</li>
-                        <li>Eve Nguyen</li>
-                    </ol>
-                    <h3>Absent:</h3>
-                    <ol>
-                        <li>Jude Gamba</li>
-                        <li>Richard James</li>
-                        <li>Eric Nguyen</li>
-                    </ol>
-                    <hr>
+                <section id="attendence_list">
+                    <h2 id="attendence_title">Attendence List</h2>
+                    <div id="present_list">
+                        <h3>Present:</h3>
+                        <ol>
+                            <li>Arul Mathur</li>
+                            <li>Meruzhan Sargsyan</li>
+                            <li>Mohamed Hambdi</li>
+                            <li>Ali Alsadah</li>
+                            <li>Kyle Long</li>
+                            <li>Arman Nurbalin</li>
+                            <li>Eve Nguyen</li>
+                        </ol>
+                    </div>
+                    <div id="absent_list">
+                        <h3>Absent:</h3>
+                        <ol>
+                            <li>Jude Gamba</li>
+                            <li>Richard James</li>
+                            <li>Eric Nguyen</li>
+                        </ol>
+                    </div>
                 </section>
                 <section id="agenda">
                     <h2>Agenda:</h2>
@@ -93,74 +96,6 @@
                     </video>
                     <br>
                     <audio controls src="audio.mp3"></audio>
-                </section>
-                <hr>
-                <section>
-                    <form>
-                        <label>First Name:</label>
-                        <input type="text" required/>
-                        <br>
-                        <label>Last Name:</label>
-                        <input type="text" required/>
-                        <br>
-                        <label>Birthday:     </label>
-                        <input type="date">
-                        <br>
-                        <fieldset>
-                            <legend>What school do you attend?</legend>
-                            <input type="radio"/>
-                            <label>UCSD</label>
-                            <br>
-                            <input type="radio"/>
-                            <label>SDSU</label>
-                            <br>
-                            <input type="radio"/>
-                            <label>Community College</label>
-                            <br>
-                            <input type="radio"/>
-                            <label>other</label>
-                        </fieldset>
-                        <fieldset>
-                            <legend>What languages are you fluent in?</legend>
-                            <input type="checkbox"/>
-                            <label>english</label>
-                            <br>
-                            <input type="checkbox"/>
-                            <label>spanish</label>
-                            <br>
-                            <input type="checkbox"/>
-                            <label>arabic</label>
-                            <br>
-                            <input type="checkbox"/>
-                            <label>mandarin</label>
-                            <br>
-                            <input type="checkbox">
-                            <label>other</label>
-                        </fieldset>
-                        <label>How are you feeling today?</label>
-                        <br>
-                        <textarea>I am feeling..</textarea>
-                        <br>
-                        <label>What year do you graduate?</label>
-                        <input list="graduation-year" name="graduation-year"/>
-                        <datalist id="graduation-year">
-                            <option value="graduated"></option>
-                            <option value="2025"></option>
-                            <option value="2026"></option>
-                            <option value="2027"></option>
-                        </datalist>
-                        <br>
-                        <label>What is your major?</label>
-                        <select>
-                            <option>Computer Science</option>
-                            <option>Data Science</option>
-                            <option>Computer Engineering
-                            </option>
-                            <option>other</option>
-                        </select>
-                        <br>
-                        <button>submit</button>
-                    </form>
                 </section>
             </main>
         </div>

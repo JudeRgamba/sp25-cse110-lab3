@@ -6,22 +6,21 @@ html {
 }
 
 body {
+    position: static;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 /*set style for header*/
-#meeting_title {
+h1.meeting_title {
     font-size: 2.5rem;
+}
+
+h1, h2, h3 {
     font-family: 'Special Gothic Expanded One', sans-serif;
     word-wrap: break-word;
 }
-hr {
-    border: none;
-    height: 10px;
-    background: #ca0303;
-    border-radius: 5px;
-}
+
 .header_container {
     box-sizing: border-box;
     width: 90%;
@@ -75,28 +74,94 @@ a {
 a:hover {
     color: #546CB6;
     text-decoration: none;
+    padding: 5px;
 }
 
 nav {
     border-style: solid;
     text-align: left;
+    background-color: #6CC6C4;
 }
+
+main > section {
+    border-color: black;
+    background-color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+}
+
+section hr {
+    border: none;
+    height: 10px;
+    background: hsl(180, 34%, 32%);
+    border-radius: 5px;
+    width: 100%;
+}
+
+main h2 {
+    text-align: center;
+}
+
+/* Style Attendence Area */
+.main_container {
+    width: 90%;
+    position: relative;
+    display: inline-grid;
+}
+
+h2 + h3 {
+    color: green;
+}
+
+h3 ~ ol {
+    color: #A7DDDC;
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-weight: 1.5px;
+}
+#attendence_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+
+#present_list {
+    padding: 1rem;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#absent_list {
+    padding: 1rem;
+    border-radius: 10px;
+    justify-self: start;
+}
+
+@media screen and (min-width: 522px) {
+    #attendence_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 
 
 /*set style for footer*/
 .footer_container {
-    
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    background-color:color-mix(in hsl shorter hue, blue 30%, green 15%);
+    background-color:color-mix(in hsl shorter hue, blue 50%, green 20%);
     background-size: cover;
     border-radius: 5px;
-
 }
 
 footer {
-    position: sticky;
+    /* position: absolute; */
     margin: 0% 0% 20px 20px;
     padding: 30px 30px 5px 5px;
     color: color(srgb 2 3 5 / 0.5);
