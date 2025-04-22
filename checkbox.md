@@ -24,4 +24,13 @@ background-color
 - ID selector
 - universal selector
 - psuedo selector
+- element selector
+- selector list
+- combining 2 selectors
+- descendent combinator
+- child combinator
+- adjacent sibling combinator
+- sibling combinator
 - font
+- media query
+- grid
